@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="reset" onclick="resetBtnDis()"><i class="fa-solid fa-rotate-right"></i></div>
+        <div class="countIcon" onclick="countDis()"><i class="fa-solid fa-moon"></i></div>
+        <div class="progressIcon" onclick="progressDis()"><i class="fa-solid fa-list-check"></i></div>
+        <div class="settingsIcon" onclick="settingsDis()"><i class="fa-solid fa-gear"></i></div>
+    </nav>
+    
+    <main>
+        <div class="countDisplay" onclick="proCount()">
+            <div class="counter">1000</div>
+            <div class="progress-bar">
+                <div class="pro-down"></div>
+            </div>
+        </div>
+        <div class="progressDisplay">Porgress</div>
+        <div class="settingsDisplay">Settings</div>
+        <div class="reset-popup">
+            <p>Are you want to reset the counter?</p>
+            <div class="btn-container">
+                <button class="no" onclick="closeReset()">No</button>
+                <button class="yes" onclick="resetCount()">Yes</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
